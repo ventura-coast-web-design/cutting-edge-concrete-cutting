@@ -1,0 +1,49 @@
+@use "variables" as *;
+
+.gallery-page {
+    h1 {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+  
+      button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background: $light-background;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 4px;
+  
+        &.active {
+          background: $accent-color;
+          color: $background-color;
+        }
+      }
+    }
+  
+    .tab-content {
+      display: none;
+  
+      &.active {
+        display: block;
+      }
+  
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+  
+        img {
+          width: 100%;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  

@@ -1,19 +1,56 @@
-@use "variables";
-// Mixins
-@mixin container {
-  max-width: variables.$container-max-width;
-  margin: 0 auto;
-  padding: 0 variables.$container-padding;
-}
+@use "variables" as *;
+@use "sass:color";
 
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin responsive($breakpoint) {
-  @media (min-width: $breakpoint) {
-    @content;
+@mixin respond($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 576px) { @content; }
   }
-} 
+  @else if $breakpoint == md {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $breakpoint == lg {
+    @media (max-width: 992px) { @content; }
+  }
+  @else if $breakpoint == xl {
+    @media (max-width: 1200px) { @content; }
+  }
+}
+
+@mixin flex-center($direction: row, $align: center, $justify: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+// Usage: @include grid(3, 1rem);
+@mixin grid($columns: 2, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+// Usage: @include button-style($color-primary);
+@mixin button-style($bg-color, $text-color: #fff) {
+  background: $bg-color;
+  color: $text-color;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: darken($bg-color, 10%);
+  }
+}
+
+// Usage: @include card;
+@mixin card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: $shadow-sm;
+  padding: 1.5rem;
+}

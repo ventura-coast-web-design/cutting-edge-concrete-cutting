@@ -1,4 +1,4 @@
-@use "variables";
+@use "variables" as *;
 // Reset and base styles
 * {
   margin: 0;
@@ -7,13 +7,13 @@
 }
 
 html {
-  font-size: variables.$font-size-base;
+  font-size: $font-size-base;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: variables.$font-family;
-  line-height: variables.$line-height-base;
-  color: variables.$text-color;
-  background-color: variables.$background-color;
+  font-family: $font-family;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $background-color;
 } 

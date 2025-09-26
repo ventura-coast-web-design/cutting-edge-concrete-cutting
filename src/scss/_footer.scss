@@ -1,1 +1,18 @@
-@use "variables";
+@use "variables" as *;
+
+.site-footer {
+    background: $secondary-color;
+    color: $background-color;
+    padding: 2rem 1rem;
+    text-align: center;
+  
+    a {
+      color: $accent-color;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
