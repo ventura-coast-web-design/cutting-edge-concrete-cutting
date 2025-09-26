@@ -1,0 +1,56 @@
+---
+layout: base.njk
+title: "Gallery - Cutting Edge Concrete Cutting"
+description: "Gallery of our work"
+---
+
+<main class="gallery-page container">
+  <h1>Project Gallery</h1>
+
+  <div class="tabs">
+    <button data-tab="walls" class="active">Wall Sawing</button>
+    <button data-tab="slabs">Slab Sawing</button>
+    <button data-tab="core">Core Drilling</button>
+    <button data-tab="demo">Demolition</button>
+  </div>
+
+  <div class="tab-content active" id="walls">
+    <div class="grid">
+      <img src="/images/wall1.jpg" alt="Wall Sawing">
+      <img src="/images/wall2.jpg" alt="Wall Sawing">
+    </div>
+  </div>
+
+  <div class="tab-content" id="slabs">
+    <div class="grid">
+      <img src="/images/slab1.jpg" alt="Slab Sawing">
+    </div>
+  </div>
+
+  <div class="tab-content" id="core">
+    <div class="grid">
+      <img src="/images/core1.jpg" alt="Core Drilling">
+    </div>
+  </div>
+
+  <div class="tab-content" id="demo">
+    <div class="grid">
+      <img src="/images/demo1.jpg" alt="Demolition">
+    </div>
+  </div>
+</main>
+
+<script>
+  const tabs = document.querySelectorAll(".tabs button");
+  const contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.remove("active"));
+
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.add("active");
+    });
+  });
+</script>
