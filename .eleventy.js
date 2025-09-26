@@ -9,6 +9,15 @@ module.exports = function(eleventyConfig) {
   // Watch for CSS changes
   eleventyConfig.addWatchTarget("./src/css/main.css");
 
+  // Add date filter
+  eleventyConfig.addFilter("date", function(date, format) {
+    const d = new Date(date);
+    if (format === "yyyy") {
+      return d.getFullYear().toString();
+    }
+    return d.toLocaleDateString();
+  });
+
   return {
     dir: {
       input: "src",
