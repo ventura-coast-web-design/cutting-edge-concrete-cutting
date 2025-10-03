@@ -352,6 +352,32 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.15);
           }
 
+          &.full-width {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, $red-accent, $red-dark);
+            color: $background-color;
+            margin-top: 1rem;
+
+            .highlight-text {
+              h4 {
+                color: $background-color;
+                font-size: 1.1rem;
+              }
+
+              p {
+                color: $background-color;
+                opacity: 0.95;
+                font-size: 1rem;
+                line-height: 1.5;
+              }
+            }
+
+            .highlight-icon {
+              color: $background-color;
+              font-size: 1.8rem;
+            }
+          }
+
           .highlight-icon {
             font-size: 1.5rem;
             flex-shrink: 0;
