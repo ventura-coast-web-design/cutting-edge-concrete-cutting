@@ -1,14 +1,16 @@
-// Variables
-$primary-color: #1a365d;
-$secondary-color: #2d3748;
-$accent-color: #e53e3e;
-$text-color: #2d3748;
-$light-text: #718096;
-$background-color: #ffffff;
-$light-background: #f7fafc;
-$border-color: #e2e8f0;
-$dark-background: #1a202c;
-$orange-accent: #ff6b35;
+// Variables - Updated to match logo colors
+$primary-color: #000000;        // Black from logo
+$secondary-color: #333333;      // Dark gray
+$accent-color: #dc2626;         // Red from logo (matching the "Cutting Edge" text)
+$text-color: #1f2937;           // Dark gray for text
+$light-text: #6b7280;           // Medium gray
+$background-color: #ffffff;     // White background
+$light-background: #f9fafb;     // Very light gray
+$border-color: #e5e7eb;         // Light gray border
+$dark-background: #000000;      // Black background
+$red-accent: #dc2626;           // Primary red accent
+$red-light: #ef4444;            // Lighter red for hover states
+$red-dark: #b91c1c;             // Darker red for active states
 
 $font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 $font-size-base: 16px;

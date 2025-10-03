@@ -15,7 +15,7 @@
 
     .footer-section {
       h3 {
-        color: $orange-accent;
+        color: $red-accent;
         margin-bottom: 1rem;
         font-size: 1.2rem;
       }
@@ -50,12 +50,12 @@
     }
   
     a {
-      color: $orange-accent;
+      color: $red-accent;
       text-decoration: none;
       transition: color 0.3s ease;
   
       &:hover {
-        color: color.adjust($orange-accent, $lightness: 10%);
+        color: $red-light;
       }
     }
   }

@@ -21,7 +21,7 @@
       }
   
       button {
-        background: $accent-color;
+        background: $red-accent;
         color: $background-color;
         border: none;
         padding: 0.75rem;
@@ -30,7 +30,7 @@
         cursor: pointer;
   
         &:hover {
-          background: color.adjust($accent-color, $lightness: -10%);
+          background: $red-dark;
         }
       }
     }

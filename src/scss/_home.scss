@@ -27,7 +27,7 @@
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
       font-weight: 400;
-      color: $orange-accent;
+      color: $red-accent;
     }
 
     .hero-features {
@@ -45,7 +45,7 @@
           content: "✓";
           position: absolute;
           left: 0;
-          color: $orange-accent;
+          color: $red-accent;
           font-weight: bold;
         }
       }
@@ -73,12 +73,12 @@
       text-align: center;
 
       &.btn-primary {
-        background: $orange-accent;
+        background: $red-accent;
         color: $background-color;
-        border-color: $orange-accent;
+        border-color: $red-accent;
 
         &:hover {
-          background: color.adjust($orange-accent, $lightness: -10%);
+          background: $red-dark;
           transform: translateY(-2px);
         }
       }
@@ -294,7 +294,7 @@
       .stat-number {
         font-size: 3rem;
         font-weight: 700;
-        color: $orange-accent;
+        color: $red-accent;
         margin-bottom: 0.5rem;
       }
 
@@ -371,7 +371,7 @@
       .step-number {
         width: 60px;
         height: 60px;
-        background: $orange-accent;
+        background: $red-accent;
         color: $background-color;
         border-radius: 50%;
         display: flex;
