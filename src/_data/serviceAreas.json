@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Los Angeles",
+    "slug": "los-angeles",
+    "county": "Los Angeles County",
+    "serviceArea": ["Downtown LA", "Hollywood", "Venice", "Santa Monica", "Beverly Hills", "West Hollywood", "Culver City", "Burbank", "Glendale", "Pasadena"],
+    "meta": {
+      "title": "Concrete Cutting in Los Angeles — Cutting Edge Concrete",
+      "description": "Professional concrete cutting, sawing and coring in Los Angeles. Over 25 years of experience serving LA County."
+    }
+  },
+  {
+    "name": "Orange County",
+    "slug": "orange-county",
+    "county": "Orange County",
+    "serviceArea": ["Anaheim", "Santa Ana", "Irvine", "Huntington Beach", "Newport Beach", "Costa Mesa", "Fullerton", "Garden Grove", "Orange", "Tustin"],
+    "meta": {
+      "title": "Concrete Cutting in Orange County — Cutting Edge Concrete",
+      "description": "Expert concrete cutting services throughout Orange County. Fast, reliable, and professional."
+    }
+  },
+  {
+    "name": "Ventura County",
+    "slug": "ventura-county",
+    "county": "Ventura County",
+    "serviceArea": ["Thousand Oaks", "Simi Valley", "Oxnard", "Ventura", "Camarillo", "Moorpark", "Westlake Village", "Newbury Park", "Fillmore", "Santa Paula"],
+    "meta": {
+      "title": "Concrete Cutting in Ventura County — Cutting Edge Concrete",
+      "description": "Professional concrete cutting and coring services in Ventura County. Family-owned since 1999."
+    }
+  },
+  {
+    "name": "Riverside County",
+    "slug": "riverside-county",
+    "county": "Riverside County",
+    "serviceArea": ["Riverside", "Moreno Valley", "Corona", "Murrieta", "Temecula", "Palm Springs", "Indio", "Palm Desert", "Hemet", "Menifee"],
+    "meta": {
+      "title": "Concrete Cutting in Riverside County — Cutting Edge Concrete",
+      "description": "Reliable concrete cutting services throughout Riverside County. Licensed and insured professionals."
+    }
+  },
+  {
+    "name": "San Bernardino County",
+    "slug": "san-bernardino-county",
+    "county": "San Bernardino County",
+    "serviceArea": ["San Bernardino", "Fontana", "Rancho Cucamonga", "Ontario", "Victorville", "Hesperia", "Chino", "Upland", "Rialto", "Colton"],
+    "meta": {
+      "title": "Concrete Cutting in San Bernardino County — Cutting Edge Concrete",
+      "description": "Expert concrete cutting and sawing services in San Bernardino County. Over 25 years of experience."
+    }
+  },
+  {
+    "name": "Kern County",
+    "slug": "kern-county",
+    "county": "Kern County",
+    "serviceArea": ["Bakersfield", "Delano", "Arvin", "Lamont", "Shafter", "Wasco", "McFarland", "Taft", "California City", "Ridgecrest"],
+    "meta": {
+      "title": "Concrete Cutting in Kern County — Cutting Edge Concrete",
+      "description": "Professional concrete cutting services in Kern County. Fast, safe, and efficient concrete work."
+    }
+  },
+  {
+    "name": "Tulare County",
+    "slug": "tulare-county",
+    "county": "Tulare County",
+    "serviceArea": ["Visalia", "Tulare", "Porterville", "Dinuba", "Hanford", "Lindsay", "Exeter", "Farmersville", "Woodlake", "Strathmore"],
+    "meta": {
+      "title": "Concrete Cutting in Tulare County — Cutting Edge Concrete",
+      "description": "Reliable concrete cutting and coring services in Tulare County. Licensed professionals with decades of experience."
+    }
+  },
+  {
+    "name": "Fresno County",
+    "slug": "fresno-county",
+    "county": "Fresno County",
+    "serviceArea": ["Fresno", "Clovis", "Sanger", "Reedley", "Selma", "Kerman", "Fowler", "Parlier", "Coalinga", "Huron"],
+    "meta": {
+      "title": "Concrete Cutting in Fresno County — Cutting Edge Concrete",
+      "description": "Expert concrete cutting services throughout Fresno County. Professional, efficient, and reliable."
+    }
+  },
+  {
+    "name": "Kings County",
+    "slug": "kings-county",
+    "county": "Kings County",
+    "serviceArea": ["Hanford", "Lemoore", "Corcoran", "Avenal", "Armona", "Home Garden", "Stratford", "Kettleman City", "Hardwick", "Grangeville"],
+    "meta": {
+      "title": "Concrete Cutting in Kings County — Cutting Edge Concrete",
+      "description": "Professional concrete cutting and sawing services in Kings County. Over 25 years of trusted service."
+    }
+  },
+  {
+    "name": "Madera County",
+    "slug": "madera-county",
+    "county": "Madera County",
+    "serviceArea": ["Madera", "Chowchilla", "Oakhurst", "Coarsegold", "North Fork", "Bass Lake", "Ahwahnee", "Raymond", "Fairmead", "Parkwood"],
+    "meta": {
+      "title": "Concrete Cutting in Madera County — Cutting Edge Concrete",
+      "description": "Reliable concrete cutting services in Madera County. Licensed and insured professionals since 1999."
+    }
+  }
+]
