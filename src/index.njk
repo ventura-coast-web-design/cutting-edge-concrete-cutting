@@ -123,45 +123,16 @@ description: "A simple, modern static website template built with Eleventy and S
     <div class="container">
       <h2>We Proudly Service The Following Areas</h2>
       <div class="areas-grid">
+        {% for area in serviceAreas %}
         <div class="area-column">
-          <h3>Los Angeles County</h3>
+          <h3><a href="/service-areas/{{ area.slug }}/">{{ area.county }}</a></h3>
           <ul>
-            <li>Los Angeles</li>
-            <li>Beverly Hills</li>
-            <li>Santa Monica</li>
-            <li>Burbank</li>
-            <li>Glendale</li>
-            <li>Pasadena</li>
-            <li>Long Beach</li>
-            <li>Torrance</li>
+            {% for city in area.serviceArea %}
+            <li><a href="/service-areas/{{ area.slug }}/{{ city.slug }}/">{{ city.name }}</a></li>
+            {% endfor %}
           </ul>
         </div>
-        <div class="area-column">
-          <h3>Orange County</h3>
-          <ul>
-            <li>Anaheim</li>
-            <li>Santa Ana</li>
-            <li>Irvine</li>
-            <li>Huntington Beach</li>
-            <li>Newport Beach</li>
-            <li>Costa Mesa</li>
-            <li>Fullerton</li>
-            <li>Garden Grove</li>
-          </ul>
-        </div>
-        <div class="area-column">
-          <h3>Ventura County</h3>
-          <ul>
-            <li>Thousand Oaks</li>
-            <li>Simi Valley</li>
-            <li>Oxnard</li>
-            <li>Ventura</li>
-            <li>Camarillo</li>
-            <li>Moorpark</li>
-            <li>Westlake Village</li>
-            <li>Newbury Park</li>
-          </ul>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </section>
