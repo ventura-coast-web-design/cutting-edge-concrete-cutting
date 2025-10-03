@@ -1,0 +1,71 @@
+---
+layout: base.njk
+pagination:
+  data: collections.counties
+  size: 1
+  alias: county
+permalink: "{{ county.url }}"
+---
+
+<main class="service-area-page">
+  <div class="container">
+    <h1>{{ county.meta.title }}</h1>
+    <p class="page-subtitle">{{ county.meta.description }}</p>
+    
+    <div class="county-info">
+      <div class="county-details">
+        <h2>Why Choose Cutting Edge Concrete for {{ county.county }}?</h2>
+        <ul class="benefits-list">
+          <li>Over 25 years of experience in {{ county.county }}</li>
+          <li>Family-owned and operated since 1999</li>
+          <li>Licensed and insured professionals</li>
+          <li>Free detailed quotes</li>
+          <li>Same-day service available</li>
+          <li>No subcontractors - all work done in-house</li>
+        </ul>
+        
+        <div class="work-types">
+          <h3>Concrete Services We Provide in {{ county.county }}:</h3>
+          <div class="work-types-grid">
+            {% for workType in county.workTypes %}
+            <div class="work-type-item">
+              <h4>{{ workType }}</h4>
+              <p>Professional {{ workType | lower }} services throughout {{ county.county }} for residential and commercial projects.</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      
+      <div class="cities-section">
+        <h2>Cities We Serve in {{ county.county }}:</h2>
+        <div class="cities-grid">
+          {% for city in county.serviceArea %}
+          <a href="/service-areas/{{ county.slug }}/{{ city.slug }}/" class="city-link">
+            <h3>{{ city.name }}</h3>
+            <p>{{ city.description }}</p>
+            <div class="city-work-types">
+              {% for workType in city.workTypes %}
+              <span class="work-type-tag">{{ workType }}</span>
+              {% endfor %}
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="cta-section">
+      <h2>Ready to Get Started?</h2>
+      <p>Contact us today for a free quote on your concrete cutting project in {{ county.county }}.</p>
+      <div class="cta-buttons">
+        <a href="tel:8055776900" class="btn btn-primary">(805) 577-6900</a>
+        <a href="/contact/" class="btn btn-secondary">Get a Free Quote</a>
+      </div>
+    </div>
+    
+    <div class="back-to-areas">
+      <a href="/service-areas/" class="btn btn-outline">← Back to All Service Areas</a>
+    </div>
+  </div>
+</main>

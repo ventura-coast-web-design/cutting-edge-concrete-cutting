@@ -3,100 +3,360 @@
     "name": "Los Angeles",
     "slug": "los-angeles",
     "county": "Los Angeles County",
-    "serviceArea": ["Downtown LA", "Hollywood", "Venice", "Santa Monica", "Beverly Hills", "West Hollywood", "Culver City", "Burbank", "Glendale", "Pasadena"],
+    "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking", "Slab Sawing", "Hand Sawing", "Concrete Removal", "Demolition"],
+    "serviceArea": [
+      {
+        "name": "Downtown LA",
+        "slug": "downtown-la",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Downtown LA including wall sawing for high-rise buildings, core drilling for utilities, and flat sawing for renovations."
+      },
+      {
+        "name": "Hollywood",
+        "slug": "hollywood",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Hand Sawing"],
+        "description": "Expert concrete cutting in Hollywood for entertainment industry projects, including precision wall sawing and core drilling for studio renovations."
+      },
+      {
+        "name": "Venice",
+        "slug": "venice",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Venice Beach area, specializing in residential and commercial wall sawing and core drilling projects."
+      },
+      {
+        "name": "Santa Monica",
+        "slug": "santa-monica",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Santa Monica for beachfront properties, including wall sawing and core drilling for luxury homes and businesses."
+      },
+      {
+        "name": "Beverly Hills",
+        "slug": "beverly-hills",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Premium concrete cutting services in Beverly Hills for high-end residential and commercial projects, including precision wall sawing and core drilling."
+      },
+      {
+        "name": "West Hollywood",
+        "slug": "west-hollywood",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in West Hollywood for entertainment district projects, including wall sawing and core drilling for nightclubs and restaurants."
+      },
+      {
+        "name": "Culver City",
+        "slug": "culver-city",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Culver City for studio and office buildings, including wall sawing and core drilling for renovations."
+      },
+      {
+        "name": "Burbank",
+        "slug": "burbank",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Hand Sawing"],
+        "description": "Reliable concrete cutting in Burbank for entertainment industry projects, including precision wall sawing and core drilling for studios and offices."
+      },
+      {
+        "name": "Glendale",
+        "slug": "glendale",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Glendale for residential and commercial projects, including wall sawing and core drilling for renovations."
+      },
+      {
+        "name": "Pasadena",
+        "slug": "pasadena",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Pasadena for historic and modern buildings, including precision wall sawing and core drilling for renovations."
+      }
+    ],
     "meta": {
-      "title": "Concrete Cutting in Los Angeles — Cutting Edge Concrete",
-      "description": "Professional concrete cutting, sawing and coring in Los Angeles. Over 25 years of experience serving LA County."
+      "title": "Concrete Cutting in Los Angeles County — Cutting Edge Concrete",
+      "description": "Professional concrete cutting, wall sawing, and core drilling services throughout Los Angeles County. Over 25 years of experience serving Downtown LA, Hollywood, Venice, Santa Monica, Beverly Hills, and all LA County cities."
     }
   },
   {
     "name": "Orange County",
     "slug": "orange-county",
     "county": "Orange County",
-    "serviceArea": ["Anaheim", "Santa Ana", "Irvine", "Huntington Beach", "Newport Beach", "Costa Mesa", "Fullerton", "Garden Grove", "Orange", "Tustin"],
+    "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking", "Slab Sawing", "Hand Sawing", "Concrete Removal", "Demolition"],
+    "serviceArea": [
+      {
+        "name": "Anaheim",
+        "slug": "anaheim",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Anaheim for theme park and entertainment projects, including wall sawing and core drilling for attractions and hotels."
+      },
+      {
+        "name": "Santa Ana",
+        "slug": "santa-ana",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Santa Ana for government and commercial buildings, including wall sawing and core drilling for office renovations."
+      },
+      {
+        "name": "Irvine",
+        "slug": "irvine",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Hand Sawing"],
+        "description": "Reliable concrete cutting services in Irvine for corporate and residential projects, including precision wall sawing and core drilling for modern buildings."
+      },
+      {
+        "name": "Huntington Beach",
+        "slug": "huntington-beach",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Huntington Beach for beachfront properties, including wall sawing and core drilling for residential and commercial projects."
+      },
+      {
+        "name": "Newport Beach",
+        "slug": "newport-beach",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Premium concrete cutting services in Newport Beach for luxury properties, including precision wall sawing and core drilling for high-end homes and businesses."
+      },
+      {
+        "name": "Costa Mesa",
+        "slug": "costa-mesa",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Costa Mesa for retail and office projects, including wall sawing and core drilling for shopping centers and commercial buildings."
+      },
+      {
+        "name": "Fullerton",
+        "slug": "fullerton",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Fullerton for educational and residential projects, including wall sawing and core drilling for schools and homes."
+      },
+      {
+        "name": "Garden Grove",
+        "slug": "garden-grove",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Hand Sawing"],
+        "description": "Reliable concrete cutting in Garden Grove for residential and commercial projects, including wall sawing and core drilling for renovations and new construction."
+      },
+      {
+        "name": "Orange",
+        "slug": "orange",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Orange for historic and modern buildings, including precision wall sawing and core drilling for renovations."
+      },
+      {
+        "name": "Tustin",
+        "slug": "tustin",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Tustin for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      }
+    ],
     "meta": {
       "title": "Concrete Cutting in Orange County — Cutting Edge Concrete",
-      "description": "Expert concrete cutting services throughout Orange County. Fast, reliable, and professional."
+      "description": "Expert concrete cutting, wall sawing, and core drilling services throughout Orange County. Serving Anaheim, Santa Ana, Irvine, Huntington Beach, Newport Beach, and all OC cities with professional concrete work."
     }
   },
   {
     "name": "Ventura County",
     "slug": "ventura-county",
     "county": "Ventura County",
-    "serviceArea": ["Thousand Oaks", "Simi Valley", "Oxnard", "Ventura", "Camarillo", "Moorpark", "Westlake Village", "Newbury Park", "Fillmore", "Santa Paula"],
+    "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking", "Slab Sawing", "Hand Sawing", "Concrete Removal", "Demolition"],
+    "serviceArea": [
+      {
+        "name": "Thousand Oaks",
+        "slug": "thousand-oaks",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Thousand Oaks for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Simi Valley",
+        "slug": "simi-valley",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Simi Valley for residential and commercial projects, including wall sawing and core drilling for renovations and new construction."
+      },
+      {
+        "name": "Oxnard",
+        "slug": "oxnard",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Oxnard for agricultural and commercial projects, including wall sawing and core drilling for warehouses and industrial buildings."
+      },
+      {
+        "name": "Ventura",
+        "slug": "ventura",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Ventura for beachfront properties, including precision wall sawing and core drilling for residential and commercial projects."
+      },
+      {
+        "name": "Camarillo",
+        "slug": "camarillo",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Camarillo for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Moorpark",
+        "slug": "moorpark",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Hand Sawing"],
+        "description": "Reliable concrete cutting in Moorpark for residential projects, including wall sawing and core drilling for home renovations and additions."
+      },
+      {
+        "name": "Westlake Village",
+        "slug": "westlake-village",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Premium concrete cutting services in Westlake Village for luxury properties, including precision wall sawing and core drilling for high-end homes."
+      },
+      {
+        "name": "Newbury Park",
+        "slug": "newbury-park",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Newbury Park for residential and commercial projects, including wall sawing and core drilling for renovations."
+      },
+      {
+        "name": "Fillmore",
+        "slug": "fillmore",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Fillmore for agricultural and residential projects, including wall sawing and core drilling for farms and homes."
+      },
+      {
+        "name": "Santa Paula",
+        "slug": "santa-paula",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Santa Paula for agricultural and residential projects, including wall sawing and core drilling for citrus industry buildings."
+      }
+    ],
     "meta": {
       "title": "Concrete Cutting in Ventura County — Cutting Edge Concrete",
-      "description": "Professional concrete cutting and coring services in Ventura County. Family-owned since 1999."
+      "description": "Professional concrete cutting, wall sawing, and core drilling services throughout Ventura County. Family-owned since 1999, serving Thousand Oaks, Simi Valley, Oxnard, Ventura, and all Ventura County cities."
     }
   },
   {
     "name": "Riverside County",
     "slug": "riverside-county",
     "county": "Riverside County",
-    "serviceArea": ["Riverside", "Moreno Valley", "Corona", "Murrieta", "Temecula", "Palm Springs", "Indio", "Palm Desert", "Hemet", "Menifee"],
+    "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking", "Slab Sawing", "Hand Sawing", "Concrete Removal", "Demolition"],
+    "serviceArea": [
+      {
+        "name": "Riverside",
+        "slug": "riverside",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Riverside for government and commercial buildings, including wall sawing and core drilling for office renovations."
+      },
+      {
+        "name": "Moreno Valley",
+        "slug": "moreno-valley",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Moreno Valley for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Corona",
+        "slug": "corona",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Corona for residential and commercial projects, including wall sawing and core drilling for renovations and new construction."
+      },
+      {
+        "name": "Murrieta",
+        "slug": "murrieta",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Murrieta for residential projects, including precision wall sawing and core drilling for home renovations and additions."
+      },
+      {
+        "name": "Temecula",
+        "slug": "temecula",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Temecula for wine country properties, including wall sawing and core drilling for wineries and luxury homes."
+      },
+      {
+        "name": "Palm Springs",
+        "slug": "palm-springs",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Premium concrete cutting services in Palm Springs for resort and luxury properties, including precision wall sawing and core drilling for hotels and homes."
+      },
+      {
+        "name": "Indio",
+        "slug": "indio",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Indio for entertainment and agricultural projects, including wall sawing and core drilling for festival grounds and farms."
+      },
+      {
+        "name": "Palm Desert",
+        "slug": "palm-desert",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Palm Desert for luxury properties, including wall sawing and core drilling for high-end homes and resorts."
+      },
+      {
+        "name": "Hemet",
+        "slug": "hemet",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Hemet for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Menifee",
+        "slug": "menifee",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Hand Sawing"],
+        "description": "Professional concrete cutting services in Menifee for residential projects, including wall sawing and core drilling for new construction and renovations."
+      }
+    ],
     "meta": {
       "title": "Concrete Cutting in Riverside County — Cutting Edge Concrete",
-      "description": "Reliable concrete cutting services throughout Riverside County. Licensed and insured professionals."
+      "description": "Reliable concrete cutting, wall sawing, and core drilling services throughout Riverside County. Licensed and insured professionals serving Riverside, Moreno Valley, Corona, Murrieta, Temecula, and all Riverside County cities."
     }
   },
   {
     "name": "San Bernardino County",
     "slug": "san-bernardino-county",
     "county": "San Bernardino County",
-    "serviceArea": ["San Bernardino", "Fontana", "Rancho Cucamonga", "Ontario", "Victorville", "Hesperia", "Chino", "Upland", "Rialto", "Colton"],
+    "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking", "Slab Sawing", "Hand Sawing", "Concrete Removal", "Demolition"],
+    "serviceArea": [
+      {
+        "name": "San Bernardino",
+        "slug": "san-bernardino",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in San Bernardino for government and commercial buildings, including wall sawing and core drilling for office renovations."
+      },
+      {
+        "name": "Fontana",
+        "slug": "fontana",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Fontana for industrial and residential projects, including wall sawing and core drilling for warehouses and homes."
+      },
+      {
+        "name": "Rancho Cucamonga",
+        "slug": "rancho-cucamonga",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Rancho Cucamonga for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Ontario",
+        "slug": "ontario",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Ontario for airport and commercial projects, including precision wall sawing and core drilling for logistics buildings."
+      },
+      {
+        "name": "Victorville",
+        "slug": "victorville",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Victorville for industrial and residential projects, including wall sawing and core drilling for warehouses and homes."
+      },
+      {
+        "name": "Hesperia",
+        "slug": "hesperia",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Hand Sawing"],
+        "description": "Reliable concrete cutting in Hesperia for residential projects, including wall sawing and core drilling for home renovations and new construction."
+      },
+      {
+        "name": "Chino",
+        "slug": "chino",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Chino for agricultural and residential projects, including wall sawing and core drilling for farms and homes."
+      },
+      {
+        "name": "Upland",
+        "slug": "upland",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Upland for residential and commercial projects, including precision wall sawing and core drilling for renovations."
+      },
+      {
+        "name": "Rialto",
+        "slug": "rialto",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Rialto for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Colton",
+        "slug": "colton",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Colton for industrial and residential projects, including wall sawing and core drilling for warehouses and homes."
+      }
+    ],
     "meta": {
       "title": "Concrete Cutting in San Bernardino County — Cutting Edge Concrete",
-      "description": "Expert concrete cutting and sawing services in San Bernardino County. Over 25 years of experience."
-    }
-  },
-  {
-    "name": "Kern County",
-    "slug": "kern-county",
-    "county": "Kern County",
-    "serviceArea": ["Bakersfield", "Delano", "Arvin", "Lamont", "Shafter", "Wasco", "McFarland", "Taft", "California City", "Ridgecrest"],
-    "meta": {
-      "title": "Concrete Cutting in Kern County — Cutting Edge Concrete",
-      "description": "Professional concrete cutting services in Kern County. Fast, safe, and efficient concrete work."
-    }
-  },
-  {
-    "name": "Tulare County",
-    "slug": "tulare-county",
-    "county": "Tulare County",
-    "serviceArea": ["Visalia", "Tulare", "Porterville", "Dinuba", "Hanford", "Lindsay", "Exeter", "Farmersville", "Woodlake", "Strathmore"],
-    "meta": {
-      "title": "Concrete Cutting in Tulare County — Cutting Edge Concrete",
-      "description": "Reliable concrete cutting and coring services in Tulare County. Licensed professionals with decades of experience."
-    }
-  },
-  {
-    "name": "Fresno County",
-    "slug": "fresno-county",
-    "county": "Fresno County",
-    "serviceArea": ["Fresno", "Clovis", "Sanger", "Reedley", "Selma", "Kerman", "Fowler", "Parlier", "Coalinga", "Huron"],
-    "meta": {
-      "title": "Concrete Cutting in Fresno County — Cutting Edge Concrete",
-      "description": "Expert concrete cutting services throughout Fresno County. Professional, efficient, and reliable."
-    }
-  },
-  {
-    "name": "Kings County",
-    "slug": "kings-county",
-    "county": "Kings County",
-    "serviceArea": ["Hanford", "Lemoore", "Corcoran", "Avenal", "Armona", "Home Garden", "Stratford", "Kettleman City", "Hardwick", "Grangeville"],
-    "meta": {
-      "title": "Concrete Cutting in Kings County — Cutting Edge Concrete",
-      "description": "Professional concrete cutting and sawing services in Kings County. Over 25 years of trusted service."
-    }
-  },
-  {
-    "name": "Madera County",
-    "slug": "madera-county",
-    "county": "Madera County",
-    "serviceArea": ["Madera", "Chowchilla", "Oakhurst", "Coarsegold", "North Fork", "Bass Lake", "Ahwahnee", "Raymond", "Fairmead", "Parkwood"],
-    "meta": {
-      "title": "Concrete Cutting in Madera County — Cutting Edge Concrete",
-      "description": "Reliable concrete cutting services in Madera County. Licensed and insured professionals since 1999."
+      "description": "Expert concrete cutting, wall sawing, and core drilling services throughout San Bernardino County. Over 25 years of experience serving San Bernardino, Fontana, Rancho Cucamonga, Ontario, and all San Bernardino County cities."
     }
   }
 ]

@@ -344,9 +344,64 @@
     }
   }
 
+  .work-types {
+    margin: 2rem 0;
+
+    h3 {
+      color: $text-color;
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .work-types-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+
+      .work-type-item {
+        background: $light-background;
+        padding: 1rem;
+        border-radius: 8px;
+        border-left: 4px solid $red-accent;
+
+        h4 {
+          color: $red-accent;
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          color: $light-text;
+          font-size: 0.9rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .city-work-types {
+    margin-top: 0.5rem;
+
+    .work-type-tag {
+      display: inline-block;
+      background: $red-accent;
+      color: $background-color;
+      padding: 0.25rem 0.5rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+  }
+
   .back-to-areas {
     text-align: center;
     margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .btn-outline {
       display: inline-block;

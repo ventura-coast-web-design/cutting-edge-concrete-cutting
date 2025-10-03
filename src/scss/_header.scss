@@ -2,11 +2,13 @@
 @use "sass:color";
 
 .site-header {
-    background: $dark-background;
-    color: $background-color;
+    background: $background-color;
+    color: $text-color;
     padding: 0.75rem 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: relative;
+    border-bottom: 3px solid $red-accent;
+    overflow: visible;
   
     .header-container {
       display: flex;
@@ -16,12 +18,18 @@
     }
 
     .logo {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: $background-color;
+      color: $text-color;
       text-decoration: none;
       flex: 1;
-      max-width: 200px;
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 5rem;
+        margin-left: 1rem;
+        width: auto;
+        object-fit: contain;
+      }
     }
 
     .mobile-menu-toggle {
@@ -39,7 +47,7 @@
       .hamburger {
         width: 25px;
         height: 3px;
-        background: $background-color;
+        background: $text-color;
         border-radius: 3px;
         transition: all 0.3s ease;
         transform-origin: 1px;
@@ -65,12 +73,13 @@
       top: 100%;
       left: 0;
       right: 0;
-      background: $dark-background;
+      background: $background-color;
       flex-direction: column;
       gap: 1rem;
       padding: 1rem;
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
       z-index: 1000;
+      border: 1px solid $border-color;
 
       &.active {
         display: flex;
@@ -82,18 +91,18 @@
       text-align: center;
 
       a {
-        color: $orange-accent;
+        color: $red-accent;
         font-size: 1.1rem;
         font-weight: 700;
         text-decoration: none;
         padding: 0.5rem 1rem;
-        border: 2px solid $orange-accent;
+        border: 2px solid $red-accent;
         border-radius: 5px;
         transition: all 0.3s ease;
         display: inline-block;
 
         &:hover {
-          background: $orange-accent;
+          background: $red-accent;
           color: $background-color;
         }
       }
@@ -101,6 +110,7 @@
   
     .nav {
       order: 1;
+      position: relative;
 
       ul {
         list-style: none;
@@ -110,20 +120,25 @@
         margin: 0;
         padding: 0;
   
-        li a {
-          color: $background-color;
-          text-decoration: none;
-          font-weight: 500;
-          padding: 0.75rem 1rem;
-          border-radius: 4px;
-          transition: all 0.3s ease;
-          display: block;
-          text-align: center;
-  
-          &:hover {
-            background: $orange-accent;
-            color: $background-color;
+        li {
+          position: relative;
+
+          a {
+            color: $text-color;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: block;
+            text-align: center;
+    
+            &:hover {
+              background: $red-accent;
+              color: $background-color;
+            }
           }
+
         }
       }
     }
@@ -136,6 +151,11 @@
         font-size: 1.3rem;
         max-width: none;
         flex: none;
+
+        img {
+          height: 55px;
+          max-width: 220px;
+        }
       }
 
       .mobile-menu-toggle {
@@ -151,6 +171,7 @@
         padding: 0;
         box-shadow: none;
         background: transparent;
+        border: none;
 
         &.active {
           display: flex;
@@ -173,9 +194,20 @@
           flex-direction: row;
           gap: 1rem;
 
-          li a {
-            padding: 0.5rem 1rem;
-            text-align: left;
+          li {
+            a {
+              padding: 0.5rem 1rem;
+              text-align: left;
+            }
+
+            .dropdown {
+              .dropdown-menu {
+                min-width: 600px;
+                left: 50%;
+                transform: translateX(-50%);
+                top: calc(100% + 0.5rem);
+              }
+            }
           }
         }
       }
@@ -184,7 +216,10 @@
     // Desktop and up
     @media (min-width: 1024px) {
       .logo {
-        font-size: 1.5rem;
+
+        img {
+            height: 6rem;
+        }
       }
 
       .header-right {

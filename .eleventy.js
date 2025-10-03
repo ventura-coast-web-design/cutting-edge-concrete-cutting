@@ -20,39 +20,34 @@ module.exports = function(eleventyConfig) {
 
   // Add global data for service areas
   eleventyConfig.addGlobalData("serviceAreas", function() {
+    return require("./src/_data/serviceAreas.json");
+  });
+
+  // Add collection for counties
+  eleventyConfig.addCollection("counties", function(collectionApi) {
     const serviceAreasData = require("./src/_data/serviceAreas.json");
-    const serviceAreas = [];
+    return serviceAreasData.map(county => ({
+      ...county,
+      url: `/service-areas/${county.slug}/`
+    }));
+  });
+
+  // Add collection for all cities
+  eleventyConfig.addCollection("cities", function(collectionApi) {
+    const serviceAreasData = require("./src/_data/serviceAreas.json");
+    const cities = [];
     
-    serviceAreasData.forEach(area => {
-      // Add county page
-      serviceAreas.push({
-        title: area.meta.title,
-        description: area.meta.description,
-        url: `/service-areas/${area.slug}/`,
-        data: {
-          ...area,
-          type: 'county'
-        }
-      });
-      
-      // Add city pages
-      area.serviceArea.forEach(city => {
-        const citySlug = city.toLowerCase().replace(/\s+/g, '-');
-        serviceAreas.push({
-          title: `Concrete Cutting in ${city} — Cutting Edge Concrete`,
-          description: `Professional concrete cutting, sawing and coring services in ${city}, ${area.county}. Fast, reliable, and experienced.`,
-          url: `/service-areas/${area.slug}/${citySlug}/`,
-          data: {
-            ...area,
-            city: city,
-            citySlug: citySlug,
-            type: 'city'
-          }
+    serviceAreasData.forEach(county => {
+      county.serviceArea.forEach(city => {
+        cities.push({
+          ...city,
+          county: county,
+          url: `/service-areas/${county.slug}/${city.slug}/`
         });
       });
     });
     
-    return serviceAreas;
+    return cities;
   });
 
   return {

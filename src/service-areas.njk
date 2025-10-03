@@ -19,7 +19,7 @@ description: "Find concrete cutting services in your area. We serve Los Angeles,
           <h3>Cities We Serve:</h3>
           <ul class="cities-list">
             {% for city in area.serviceArea %}
-            <li><a href="/service-areas/{{ area.slug }}/{{ city | lower | replace(" ", "-") }}/">{{ city }}</a></li>
+            <li><a href="/service-areas/{{ area.slug }}/{{ city.slug }}/">{{ city.name }}</a></li>
             {% endfor %}
           </ul>
         </div>
