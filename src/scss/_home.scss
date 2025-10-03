@@ -40,14 +40,6 @@
         margin: 0.4rem 0;
         position: relative;
         padding-left: 1.2rem;
-
-        &::before {
-          content: "✓";
-          position: absolute;
-          left: 0;
-          color: $red-accent;
-          font-weight: bold;
-        }
       }
     }
 
@@ -408,8 +400,10 @@
 
     .areas-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
     }
 
     .area-column {
@@ -417,11 +411,27 @@
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      }
 
       h3 {
-        color: $primary-color;
         margin-bottom: 1rem;
         font-size: 1.2rem;
+
+        a {
+          color: $red-accent;
+          text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $red-dark;
+          }
+        }
       }
 
       ul {
@@ -430,11 +440,21 @@
 
         li {
           padding: 0.3rem 0;
-          color: $light-text;
           border-bottom: 1px solid $border-color;
 
           &:last-child {
             border-bottom: none;
+          }
+
+          a {
+            color: $light-text;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: block;
+
+            &:hover {
+              color: $red-accent;
+            }
           }
         }
       }
