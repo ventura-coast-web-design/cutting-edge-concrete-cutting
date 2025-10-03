@@ -265,7 +265,6 @@
       background: $light-background;
       padding: 1.5rem;
       border-radius: 8px;
-      border-left: 4px solid $red-accent;
 
       h3 {
         color: $text-color;
@@ -354,26 +353,36 @@
     }
 
     .work-types-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
 
       .work-type-item {
-        background: $light-background;
-        padding: 1rem;
-        border-radius: 8px;
-        border-left: 4px solid $red-accent;
+        background: $red-accent;
+        color: $background-color;
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+        border: 2px solid $red-accent;
+        transition: all 0.3s ease;
+        cursor: default;
+
+        &:hover {
+          background: $red-dark;
+          border-color: $red-dark;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+        }
 
         h4 {
-          color: $red-accent;
-          font-size: 1rem;
-          margin-bottom: 0.5rem;
+          color: $background-color;
+          font-size: 0.9rem;
+          margin: 0;
+          font-weight: 600;
+          text-align: center;
         }
 
         p {
-          color: $light-text;
-          font-size: 0.9rem;
-          margin: 0;
+          display: none;
         }
       }
     }
