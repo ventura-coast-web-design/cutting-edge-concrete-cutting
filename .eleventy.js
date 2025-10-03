@@ -18,11 +18,6 @@ module.exports = function(eleventyConfig) {
     return d.toLocaleDateString();
   });
 
-  // Add global data for service areas
-  eleventyConfig.addGlobalData("serviceAreas", function() {
-    return require("./src/_data/serviceAreas.json");
-  });
-
   // Add collection for counties
   eleventyConfig.addCollection("counties", function(collectionApi) {
     const serviceAreasData = require("./src/_data/serviceAreas.json");
