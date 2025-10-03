@@ -32,7 +32,6 @@ description: "{{ county.meta.description }}"
             {% for workType in county.workTypes %}
             <div class="work-type-item">
               <h4>{{ workType }}</h4>
-              <p>Professional {{ workType | lower }} services throughout {{ county.county }} for residential and commercial projects.</p>
             </div>
             {% endfor %}
           </div>
@@ -46,11 +45,6 @@ description: "{{ county.meta.description }}"
           <a href="/service-areas/{{ county.slug }}/{{ city.slug }}/" class="city-link">
             <h3>{{ city.name }}</h3>
             <p>{{ city.description }}</p>
-            <div class="city-work-types">
-              {% for workType in city.workTypes %}
-              <span class="work-type-tag">{{ workType }}</span>
-              {% endfor %}
-            </div>
           </a>
           {% endfor %}
         </div>
