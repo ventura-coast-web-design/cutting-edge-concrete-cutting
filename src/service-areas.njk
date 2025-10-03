@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: "Service Areas - Cutting Edge Concrete Cutting"
+description: "Find concrete cutting services in your area. We serve Los Angeles, Orange, Ventura, Riverside, San Bernardino, Kern, Tulare, Fresno, Kings, and Madera Counties."
+---
+
+<main class="service-areas-page">
+  <div class="container">
+    <h1>Service Areas</h1>
+    <p class="page-subtitle">Professional concrete cutting, sawing, and coring services throughout Southern and Central California</p>
+    
+    <div class="counties-grid">
+      {% for area in serviceAreas %}
+      <div class="county-card">
+        <h2>{{ area.county }}</h2>
+        <p class="county-description">{{ area.meta.description }}</p>
+        
+        <div class="cities-section">
+          <h3>Cities We Serve:</h3>
+          <ul class="cities-list">
+            {% for city in area.serviceArea %}
+            <li><a href="/service-areas/{{ area.slug }}/{{ city | lower | replace(" ", "-") }}/">{{ city }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+        <a href="/service-areas/{{ area.slug }}/" class="btn btn-primary">View {{ area.county }} Services</a>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="cta-section">
+      <h2>Don't See Your City?</h2>
+      <p>We serve many more areas throughout California. Contact us to see if we can help with your concrete cutting project.</p>
+      <a href="/contact/" class="btn btn-primary">Get a Free Quote</a>
+    </div>
+  </div>
+</main>
