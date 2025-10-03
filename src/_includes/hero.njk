@@ -1,0 +1,45 @@
+{% set randomImage = range(1, 61) | random %}
+{% if randomImage < 10 %}
+  {% set imageNumber = "0" + randomImage %}
+{% else %}
+  {% set imageNumber = randomImage %}
+{% endif %}
+{% set heroImage = "/assets/concrete-cutting-" + imageNumber + ".webp" %}
+
+{% if city %}
+  {% set pageTitle = "Concrete Cutting in " + city.name + ", " + city.county.county + " — Cutting Edge Concrete" %}
+  {% set pageDescription = "Professional concrete cutting, sawing and coring services in " + city.name + ", " + city.county.county + ". Fast, reliable, and experienced. " + city.description %}
+  {% set heroSubtitle = "Professional Concrete Services in " + city.name %}
+{% elif county %}
+  {% set pageTitle = county.meta.title %}
+  {% set pageDescription = county.meta.description %}
+  {% set heroSubtitle = "Professional Concrete Services in " + county.county %}
+{% else %}
+  {% set pageTitle = title or "Cutting Edge Concrete Cutting" %}
+  {% set pageDescription = description %}
+  {% set heroSubtitle = subtitle %}
+{% endif %}
+
+<script>
+  document.title = "{{ pageTitle }}";
+  document.querySelector('meta[name="description"]').setAttribute('content', "{{ pageDescription }}");
+</script>
+
+<section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ heroImage }}');">
+  <div class="container">
+    <div class="hero-content">
+      <h1>{{ pageTitle }}</h1>
+      {% if heroSubtitle %}
+      <p class="hero-subtitle">{{ heroSubtitle }}</p>
+      {% endif %}
+      {% if pageDescription %}
+      <p class="hero-description">{{ pageDescription }}</p>
+      {% endif %}
+      {% if cta_text and cta_url %}
+      <a href="{{ cta_url }}" class="btn btn-primary">{{ cta_text }}</a>
+      {% else %}
+      <a href="/contact/" class="btn btn-primary">Get a Free Quote</a>
+      {% endif %}
+    </div>
+  </div>
+</section>

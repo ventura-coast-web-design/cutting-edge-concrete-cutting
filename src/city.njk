@@ -1,13 +1,13 @@
 ---
-layout: base.njk
+layout: city.njk
 pagination:
   data: collections.cities
   size: 1
   alias: city
 permalink: "{{ city.url }}"
-title: "{{ city.meta.title }}"
-description: "{{ city.meta.description }}"
 ---
+
+{% include "hero.njk" %}
 
 <main class="service-area-page">
   <div class="container">

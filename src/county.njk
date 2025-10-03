@@ -7,7 +7,12 @@ pagination:
 permalink: "{{ county.url }}"
 title: "{{ county.meta.title }}"
 description: "{{ county.meta.description }}"
+subtitle: "Professional Concrete Services in {{ county.county }}"
+cta_text: "Get a Free Quote"
+cta_url: "/contact/"
 ---
+
+{% include "hero.njk" %}
 
 <main class="service-area-page">
   <div class="container">

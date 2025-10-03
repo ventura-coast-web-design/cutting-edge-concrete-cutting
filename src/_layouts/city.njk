@@ -1,0 +1,25 @@
+---
+layout: base.njk
+title: "Concrete Cutting Services — Cutting Edge Concrete"
+description: "Professional concrete cutting, sawing and coring services. Fast, reliable, and experienced."
+---
+
+<script>
+  // Update page title and description with city-specific data
+  document.addEventListener('DOMContentLoaded', function() {
+    const cityName = '{{ city.name }}';
+    const countyName = '{{ city.county.county }}';
+    const cityDescription = '{{ city.description }}';
+    
+    const pageTitle = `Concrete Cutting in ${cityName}, ${countyName} — Cutting Edge Concrete`;
+    const pageDescription = `Professional concrete cutting, sawing and coring services in ${cityName}, ${countyName}. Fast, reliable, and experienced. ${cityDescription}`;
+    
+    document.title = pageTitle;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', pageDescription);
+    }
+  });
+</script>
+
+{{ content | safe }}
