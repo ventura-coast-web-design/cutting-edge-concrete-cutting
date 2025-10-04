@@ -18,6 +18,11 @@ module.exports = function(eleventyConfig) {
     return d.toLocaleDateString();
   });
 
+  // Add current year filter
+  eleventyConfig.addFilter("currentYear", function() {
+    return new Date().getFullYear().toString();
+  });
+
   // Add collection for counties
   eleventyConfig.addCollection("counties", function(collectionApi) {
     const serviceAreasData = require("./src/_data/serviceAreas.json");
