@@ -22,11 +22,17 @@ cta_url: "/contact/"
         
         <div class="cities-section">
           <h3>Cities We Serve:</h3>
-          <ul class="cities-list">
+          <ul class="cities-list" data-county="{{ area.slug }}">
             {% for city in area.serviceArea %}
-            <li><a href="/service-areas/{{ area.slug }}/{{ city.slug }}/">{{ city.name }}</a></li>
+            <li class="city-item" {% if loop.index > 10 %}style="display: none;"{% endif %}><a href="/service-areas/{{ area.slug }}/{{ city.slug }}/">{{ city.name }}</a></li>
             {% endfor %}
           </ul>
+          {% if area.serviceArea.length > 10 %}
+          <button class="see-more-btn" data-county="{{ area.slug }}">
+            <span class="see-more-text">See More Cities</span>
+            <span class="see-less-text" style="display: none;">See Less</span>
+          </button>
+          {% endif %}
         </div>
         
         <a href="/service-areas/{{ area.slug }}/" class="btn btn-primary">View {{ area.county }} Services</a>
@@ -41,3 +47,40 @@ cta_url: "/contact/"
     </div>
   </div>
 </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const seeMoreButtons = document.querySelectorAll('.see-more-btn');
+  
+  seeMoreButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const countySlug = this.getAttribute('data-county');
+      const citiesList = document.querySelector(`[data-county="${countySlug}"]`);
+      const hiddenCities = citiesList.querySelectorAll('.city-item[style*="display: none"]');
+      const seeMoreText = this.querySelector('.see-more-text');
+      const seeLessText = this.querySelector('.see-less-text');
+      
+      if (hiddenCities.length > 0) {
+        // Show all hidden cities
+        hiddenCities.forEach(city => {
+          city.style.display = 'block';
+        });
+        seeMoreText.style.display = 'none';
+        seeLessText.style.display = 'inline';
+        this.setAttribute('data-expanded', 'true');
+      } else {
+        // Hide cities beyond the first 10
+        const allCities = citiesList.querySelectorAll('.city-item');
+        allCities.forEach((city, index) => {
+          if (index >= 10) {
+            city.style.display = 'none';
+          }
+        });
+        seeMoreText.style.display = 'inline';
+        seeLessText.style.display = 'none';
+        this.setAttribute('data-expanded', 'false');
+      }
+    });
+  });
+});
+</script>

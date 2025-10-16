@@ -92,6 +92,32 @@
       }
     }
 
+    .see-more-btn {
+      background: transparent;
+      color: $red-accent;
+      border: 2px solid $red-accent;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+      display: inline-block;
+
+      &:hover {
+        background: $red-accent;
+        color: $background-color;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.3);
+      }
+    }
+
     .btn {
       display: inline-block;
       background: $red-accent;
