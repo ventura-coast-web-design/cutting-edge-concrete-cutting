@@ -26,9 +26,44 @@
 
   .hero-subtitle {
     font-size: 1.1rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    color: $red-accent;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: $background-color;
+    background: linear-gradient(135deg, $red-accent, $red-dark);
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(135deg, $red-accent, $red-dark);
+      border-radius: 10px;
+      z-index: -1;
+      opacity: 0.3;
+      filter: blur(4px);
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -10px;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 8px solid $red-dark;
+    }
   }
 
   .hero-description {
@@ -74,6 +109,14 @@
 
     .hero-subtitle {
       font-size: 1.3rem;
+      padding: 1rem 2rem;
+      
+      &::after {
+        left: -12px;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid $red-dark;
+      }
     }
 
     .hero-description {
@@ -101,6 +144,14 @@
 
     .hero-subtitle {
       font-size: 1.5rem;
+      padding: 1.25rem 2.5rem;
+      
+      &::after {
+        left: -15px;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-right: 12px solid $red-dark;
+      }
     }
 
     .hero-description {
