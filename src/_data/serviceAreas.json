@@ -64,6 +64,108 @@
         "slug": "pasadena",
         "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
         "description": "Professional concrete cutting in Pasadena for historic and modern buildings, including precision wall sawing and core drilling for renovations."
+      },
+      {
+        "name": "Long Beach",
+        "slug": "long-beach",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Long Beach for port and waterfront projects, including wall sawing and core drilling for commercial buildings."
+      },
+      {
+        "name": "Pomona",
+        "slug": "pomona",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Pomona for educational and residential projects, including wall sawing and core drilling for schools and homes."
+      },
+      {
+        "name": "Torrance",
+        "slug": "torrance",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Torrance for aerospace and commercial projects, including wall sawing and core drilling for industrial facilities."
+      },
+      {
+        "name": "Palmdale",
+        "slug": "palmdale",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Palmdale for aerospace and residential projects, including wall sawing and core drilling for homes and facilities."
+      },
+      {
+        "name": "Lancaster",
+        "slug": "lancaster",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Lancaster for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "El Monte",
+        "slug": "el-monte",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in El Monte for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Inglewood",
+        "slug": "inglewood",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Inglewood for entertainment and residential projects, including wall sawing and core drilling for stadiums and homes."
+      },
+      {
+        "name": "West Covina",
+        "slug": "west-covina",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in West Covina for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Norwalk",
+        "slug": "norwalk",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Norwalk for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Hawthorne",
+        "slug": "hawthorne",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Hawthorne for aerospace and residential projects, including wall sawing and core drilling for facilities and homes."
+      },
+      {
+        "name": "Alhambra",
+        "slug": "alhambra",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Alhambra for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Baldwin Park",
+        "slug": "baldwin-park",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Baldwin Park for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Bellflower",
+        "slug": "bellflower",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Bellflower for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Compton",
+        "slug": "compton",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Compton for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Carson",
+        "slug": "carson",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Carson for industrial and residential projects, including wall sawing and core drilling for warehouses and homes."
+      },
+      {
+        "name": "Gardena",
+        "slug": "gardena",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Gardena for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "South Gate",
+        "slug": "south-gate",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in South Gate for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
       }
     ],
     "meta": {
@@ -136,6 +238,60 @@
         "slug": "tustin",
         "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
         "description": "Professional concrete cutting in Tustin for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Laguna Beach",
+        "slug": "laguna-beach",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Premium concrete cutting services in Laguna Beach for luxury coastal properties, including precision wall sawing and core drilling for high-end homes."
+      },
+      {
+        "name": "Mission Viejo",
+        "slug": "mission-viejo",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Mission Viejo for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Cypress",
+        "slug": "cypress",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Cypress for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Buena Park",
+        "slug": "buena-park",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Buena Park for entertainment and residential projects, including wall sawing and core drilling for theme parks and homes."
+      },
+      {
+        "name": "Westminster",
+        "slug": "westminster",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Westminster for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Stanton",
+        "slug": "stanton",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Stanton for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "La Habra",
+        "slug": "la-habra",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in La Habra for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Placentia",
+        "slug": "placentia",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Placentia for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Yorba Linda",
+        "slug": "yorba-linda",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Yorba Linda for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
       }
     ],
     "meta": {
@@ -208,6 +364,60 @@
         "slug": "santa-paula",
         "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
         "description": "Reliable concrete cutting in Santa Paula for agricultural and residential projects, including wall sawing and core drilling for citrus industry buildings."
+      },
+      {
+        "name": "Ojai",
+        "slug": "ojai",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Premium concrete cutting services in Ojai for luxury properties and retreats, including precision wall sawing and core drilling for high-end homes."
+      },
+      {
+        "name": "Port Hueneme",
+        "slug": "port-hueneme",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Port Hueneme for naval base and residential projects, including wall sawing and core drilling for military facilities and homes."
+      },
+      {
+        "name": "Santa Barbara",
+        "slug": "santa-barbara",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Santa Barbara for luxury coastal properties, including precision wall sawing and core drilling for high-end homes and resorts."
+      },
+      {
+        "name": "Carpinteria",
+        "slug": "carpinteria",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Carpinteria for coastal residential projects, including wall sawing and core drilling for beachfront homes."
+      },
+      {
+        "name": "Somis",
+        "slug": "somis",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Somis for agricultural and residential projects, including wall sawing and core drilling for farms and homes."
+      },
+      {
+        "name": "Mira Monte",
+        "slug": "mira-monte",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Mira Monte for residential projects, including wall sawing and core drilling for homes and renovations."
+      },
+      {
+        "name": "Oak View",
+        "slug": "oak-view",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Oak View for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Meiners Oaks",
+        "slug": "meiners-oaks",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Meiners Oaks for residential projects, including wall sawing and core drilling for homes and renovations."
+      },
+      {
+        "name": "Casitas Springs",
+        "slug": "casitas-springs",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Casitas Springs for residential projects, including wall sawing and core drilling for homes and renovations."
       }
     ],
     "meta": {
@@ -280,6 +490,60 @@
         "slug": "menifee",
         "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Hand Sawing"],
         "description": "Professional concrete cutting services in Menifee for residential projects, including wall sawing and core drilling for new construction and renovations."
+      },
+      {
+        "name": "Lake Elsinore",
+        "slug": "lake-elsinore",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Lake Elsinore for lakeside and residential projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Perris",
+        "slug": "perris",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Perris for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Beaumont",
+        "slug": "beaumont",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Beaumont for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Banning",
+        "slug": "banning",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Banning for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Calimesa",
+        "slug": "calimesa",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Calimesa for residential projects, including wall sawing and core drilling for homes and renovations."
+      },
+      {
+        "name": "Wildomar",
+        "slug": "wildomar",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Wildomar for residential projects, including wall sawing and core drilling for homes and new construction."
+      },
+      {
+        "name": "Canyon Lake",
+        "slug": "canyon-lake",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Canyon Lake for lakeside residential projects, including precision wall sawing and core drilling for waterfront homes."
+      },
+      {
+        "name": "Desert Hot Springs",
+        "slug": "desert-hot-springs",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Desert Hot Springs for resort and residential projects, including wall sawing and core drilling for spas and homes."
+      },
+      {
+        "name": "Cathedral City",
+        "slug": "cathedral-city",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Cathedral City for resort and residential projects, including wall sawing and core drilling for hotels and homes."
       }
     ],
     "meta": {
@@ -352,11 +616,197 @@
         "slug": "colton",
         "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
         "description": "Professional concrete cutting in Colton for industrial and residential projects, including wall sawing and core drilling for warehouses and homes."
+      },
+      {
+        "name": "Redlands",
+        "slug": "redlands",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Redlands for historic and residential projects, including precision wall sawing and core drilling for Victorian homes and businesses."
+      },
+      {
+        "name": "Yucaipa",
+        "slug": "yucaipa",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Yucaipa for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Highland",
+        "slug": "highland",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Highland for residential projects, including wall sawing and core drilling for homes and renovations."
+      },
+      {
+        "name": "Loma Linda",
+        "slug": "loma-linda",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Loma Linda for medical and residential projects, including wall sawing and core drilling for hospitals and homes."
+      },
+      {
+        "name": "Grand Terrace",
+        "slug": "grand-terrace",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Grand Terrace for residential projects, including wall sawing and core drilling for homes and renovations."
+      },
+      {
+        "name": "Adelanto",
+        "slug": "adelanto",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Adelanto for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Barstow",
+        "slug": "barstow",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Barstow for transportation and residential projects, including wall sawing and core drilling for logistics facilities and homes."
       }
     ],
     "meta": {
       "title": "Concrete Cutting in San Bernardino County — Cutting Edge Concrete",
       "description": "Expert concrete cutting, wall sawing, and core drilling services throughout San Bernardino County. Over 26 years of experience serving San Bernardino, Fontana, Rancho Cucamonga, Ontario, and all San Bernardino County cities."
+    }
+  },
+  {
+    "name": "San Diego County",
+    "slug": "san-diego-county",
+    "county": "San Diego County",
+    "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking", "Slab Sawing", "Hand Sawing", "Concrete Removal", "Demolition"],
+    "serviceArea": [
+      {
+        "name": "San Diego",
+        "slug": "san-diego",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in San Diego for downtown and waterfront projects, including wall sawing and core drilling for high-rise buildings and commercial properties."
+      },
+      {
+        "name": "Chula Vista",
+        "slug": "chula-vista",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Chula Vista for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "Oceanside",
+        "slug": "oceanside",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Oceanside for beachfront properties, including wall sawing and core drilling for coastal homes and commercial buildings."
+      },
+      {
+        "name": "Escondido",
+        "slug": "escondido",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Escondido for residential and commercial projects, including precision wall sawing and core drilling for renovations."
+      },
+      {
+        "name": "Carlsbad",
+        "slug": "carlsbad",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Premium concrete cutting services in Carlsbad for luxury properties, including wall sawing and core drilling for high-end homes and resorts."
+      },
+      {
+        "name": "Vista",
+        "slug": "vista",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Hand Sawing"],
+        "description": "Expert concrete cutting in Vista for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "San Marcos",
+        "slug": "san-marcos",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in San Marcos for residential projects, including wall sawing and core drilling for home renovations and additions."
+      },
+      {
+        "name": "Encinitas",
+        "slug": "encinitas",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Encinitas for beachfront properties, including precision wall sawing and core drilling for coastal homes."
+      },
+      {
+        "name": "El Cajon",
+        "slug": "el-cajon",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in El Cajon for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      },
+      {
+        "name": "La Mesa",
+        "slug": "la-mesa",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in La Mesa for residential and commercial projects, including wall sawing and core drilling for renovations and new construction."
+      }
+    ],
+    "meta": {
+      "title": "Concrete Cutting in San Diego County — Cutting Edge Concrete",
+      "description": "Professional concrete cutting, wall sawing, and core drilling services throughout San Diego County. Licensed and insured professionals serving San Diego and all San Diego County cities."
+    }
+  },
+  {
+    "name": "Kern County",
+    "slug": "kern-county",
+    "county": "Kern County",
+    "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking", "Slab Sawing", "Hand Sawing", "Concrete Removal", "Demolition"],
+    "serviceArea": [
+      {
+        "name": "Bakersfield",
+        "slug": "bakersfield",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting services in Bakersfield for oil industry and agricultural projects, including wall sawing and core drilling for industrial facilities and commercial buildings."
+      },
+      {
+        "name": "Delano",
+        "slug": "delano",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting in Delano for agricultural and residential projects, including wall sawing and core drilling for farms and homes."
+      },
+      {
+        "name": "Ridgecrest",
+        "slug": "ridgecrest",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting services in Ridgecrest for government and military projects, including wall sawing and core drilling for base facilities."
+      },
+      {
+        "name": "Taft",
+        "slug": "taft",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Taft for oil industry projects, including precision wall sawing and core drilling for drilling facilities."
+      },
+      {
+        "name": "Shafter",
+        "slug": "shafter",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Shafter for agricultural and industrial projects, including wall sawing and core drilling for warehouses and processing facilities."
+      },
+      {
+        "name": "Wasco",
+        "slug": "wasco",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in Wasco for agricultural projects, including wall sawing and core drilling for farming facilities and processing plants."
+      },
+      {
+        "name": "Tehachapi",
+        "slug": "tehachapi",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Hand Sawing", "Concrete Breaking"],
+        "description": "Professional concrete cutting in Tehachapi for wind energy and residential projects, including wall sawing and core drilling for homes and energy facilities."
+      },
+      {
+        "name": "Arvin",
+        "slug": "arvin",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Concrete Breaking"],
+        "description": "Expert concrete cutting services in Arvin for agricultural projects, including wall sawing and core drilling for farming and processing facilities."
+      },
+      {
+        "name": "McFarland",
+        "slug": "mcfarland",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Flat Sawing", "Concrete Breaking"],
+        "description": "Reliable concrete cutting in McFarland for agricultural and residential projects, including wall sawing and core drilling for farms and homes."
+      },
+      {
+        "name": "California City",
+        "slug": "california-city",
+        "workTypes": ["Wall Sawing", "Core Drilling", "Slab Sawing", "Hand Sawing"],
+        "description": "Professional concrete cutting services in California City for residential and commercial projects, including wall sawing and core drilling for homes and businesses."
+      }
+    ],
+    "meta": {
+      "title": "Concrete Cutting in Kern County — Cutting Edge Concrete",
+      "description": "Reliable concrete cutting, wall sawing, and core drilling services throughout Kern County. Expert professionals serving Bakersfield and all Kern County cities."
     }
   }
 ]
