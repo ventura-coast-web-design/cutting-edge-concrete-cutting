@@ -222,9 +222,14 @@ description: "Cutting Edge Concrete Cutting is a family-owned and operated concr
           <h3><a href="/service-areas/{{ area.slug }}/">{{ area.county }}</a></h3>
           <ul>
             {% for city in area.serviceArea %}
+            {% if loop.index <= 10 %}
             <li><a href="/service-areas/{{ area.slug }}/{{ city.slug }}/">{{ city.name }}</a></li>
+            {% endif %}
             {% endfor %}
           </ul>
+          {% if area.serviceArea.length > 10 %}
+          <a href="/service-areas/{{ area.slug }}/" class="btn">All Serviced Cities</a>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
