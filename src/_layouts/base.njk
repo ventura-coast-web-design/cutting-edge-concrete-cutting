@@ -7,6 +7,19 @@
     <meta name="description" content="{% if description %}{{ description }}{% else %}Cutting Edge Concrete Cutting is a family-owned and operated concrete cutting company that has been serving Southern California since 1997. We are a full-service concrete cutting company that offers a wide range of services to our clients.{% endif %}">
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/main.css">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Cutting Edge Concrete Cutting",
+        "url": "https://cuttingedgeconcretecutting.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+        }
+    </script>
 </head>
 <body>
     {% include "../_includes/header.njk" %}
