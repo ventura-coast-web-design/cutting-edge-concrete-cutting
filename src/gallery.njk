@@ -9,66 +9,11 @@ description: "View our portfolio of concrete cutting, sawing, and coring project
   <p class="gallery-subtitle">26 Years of Concrete Cutting, Sawing, and Coring Services Across Southern California</p>
 
   <div class="gallery-grid">
-    <img src="/assets/concrete-cutting-01.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-02.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-03.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-04.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-05.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-06.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-07.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-08.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-09.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-10.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-11.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-12.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-13.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-14.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-15.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-16.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-17.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-18.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-19.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-20.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-21.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-22.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-23.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-24.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-25.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-26.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-27.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-28.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-29.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-30.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-31.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-32.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-33.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-34.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-35.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-36.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-37.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-38.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-39.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-40.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-41.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-42.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-43.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-44.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-45.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-46.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-47.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-48.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-49.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-50.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-51.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-52.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-53.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-54.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-55.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-56.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-57.webp" alt="Concrete cutting project" loading="lazy">
-    <img src="/assets/concrete-cutting-58.webp" alt="Wall and slab sawing project" loading="lazy">
-    <img src="/assets/concrete-cutting-59.webp" alt="Core drilling project" loading="lazy">
-    <img src="/assets/concrete-cutting-60.webp" alt="Concrete cutting project" loading="lazy">
+    {% for i in range(1, 61) %}
+      {% set imageNum = ("0" + i) if i < 10 else i %}
+      {% set altText = "Core drilling project" if i % 3 == 0 else ("Wall and slab sawing project" if i % 2 == 0 else "Concrete cutting project") %}
+      {% image "src/assets/concrete-cutting-" + imageNum + ".webp", altText, "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" %}
+    {% endfor %}
   </div>
 </main>
 

@@ -1,4 +1,29 @@
 const sass = require("sass");
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
+
+async function imageShortcode(src, alt, sizes = "(min-width: 1024px) 800px, 100vw", loading = "lazy") {
+  const metadata = await Image(src, {
+    widths: [400, 800, 1200],
+    formats: ["webp", "jpeg"],
+    outputDir: "./_site/assets/optimized/",
+    urlPath: "/assets/optimized/",
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    }
+  });
+
+  const imageAttributes = {
+    alt,
+    sizes,
+    loading,
+    decoding: "async",
+  };
+
+  return Image.generateHTML(metadata, imageAttributes);
+}
 
 module.exports = function(eleventyConfig) {
   // Copy static assets
@@ -22,6 +47,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("currentYear", function() {
     return new Date().getFullYear().toString();
   });
+
+  // Add responsive image shortcode
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
   // Add collection for counties
   eleventyConfig.addCollection("counties", function(collectionApi) {
