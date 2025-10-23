@@ -4,7 +4,7 @@
 {% else %}
   {% set imageNumber = randomImage %}
 {% endif %}
-{% set heroImage = "/assets/concrete-cutting-" + imageNumber + ".webp" %}
+{% set heroImagePath = "src/assets/concrete-cutting-" + imageNumber + ".webp" %}
 
 {% if city %}
   {% set pageTitle = "Concrete Cutting in " + city.name + ", " + city.county.county + " — Cutting Edge Concrete" %}
@@ -25,7 +25,11 @@
   document.querySelector('meta[name="description"]').setAttribute('content', "{{ pageDescription }}");
 </script>
 
-<section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ heroImage }}');">
+<section class="hero hero-with-bg">
+  <div class="hero-background">
+    {% image heroImagePath, "Professional concrete cutting service", "(min-width: 1024px) 100vw, 100vw", "eager" %}
+  </div>
+  <div class="hero-overlay"></div>
   <div class="container">
     <div class="hero-content">
       <h1>{{ pageTitle }}</h1>
