@@ -15,7 +15,7 @@
 
     .footer-section {
       h2 {
-        color: $red-accent;
+        color: white;
         margin-bottom: 1rem;
         font-size: 1.2rem;
       }
@@ -50,12 +50,12 @@
     }
   
     a {
-      color: $red-accent;
+      color: white;
       text-decoration: none;
       transition: color 0.3s ease;
   
       &:hover {
-        color: $red-light;
+        color: white;
       }
     }
   }
