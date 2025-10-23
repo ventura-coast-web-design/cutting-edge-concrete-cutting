@@ -47,15 +47,35 @@
       padding-top: 2rem;
       text-align: center;
       color: #a0aec0;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-attribution {
+        font-size: 0.9rem;
+        opacity: 0.8;
+
+        a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $red-light;
+            text-decoration: underline;
+          }
+        }
+      }
     }
-  
-    a {
+
+    .footer-section a {
       color: white;
       text-decoration: none;
       transition: color 0.3s ease;
   
       &:hover {
-        color: white;
+        color: $red-light;
       }
     }
   }
