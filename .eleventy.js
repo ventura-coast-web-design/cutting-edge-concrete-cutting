@@ -28,7 +28,7 @@ async function imageShortcode(src, alt, sizes = "(min-width: 1024px) 800px, 100v
 module.exports = function(eleventyConfig) {
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/favicon.ico");
+  eleventyConfig.addPassthroughCopy({ "favicon": "/" });
   eleventyConfig.addPassthroughCopy("src/css");
 
   // Watch for CSS changes
